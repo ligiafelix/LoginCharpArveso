@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginCharpArveso", "LoginCharpArveso\LoginCharpArveso.csproj", "{42D399A7-264F-4898-B4C6-B10D09DC96D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42D399A7-264F-4898-B4C6-B10D09DC96D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D399A7-264F-4898-B4C6-B10D09DC96D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D399A7-264F-4898-B4C6-B10D09DC96D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D399A7-264F-4898-B4C6-B10D09DC96D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3719FE15-8A53-417D-B4CF-428C956878ED}
+	EndGlobalSection
+EndGlobal
