@@ -67,7 +67,22 @@ namespace LoginCharpArveso
             Application.Exit();
         }
 
-   
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            Conexao.Open();
+            try
+            {
+                string query = "INSERT INTO Usuario (Username, Password) VALUES ('" + txtUsuario.Text + "', '" + txtPassword.Text + "')"; //Usuario WHERE Username='" + txtUsuario.Text + "' AND Password = "
+                SqlDataAdapter dp = new SqlDataAdapter(query, Conexao);
+                DataTable dt = new DataTable(); //chama a tabela e add linha
+                dp.Fill(dt); //executa query
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Falha ao inserir" + erro);
+            }
+            Conexao.Close();
+        }
     }
 
 }
