@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
@@ -35,13 +36,15 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(56, 42);
+            this.label1.Location = new System.Drawing.Point(31, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 19);
             this.label1.TabIndex = 0;
@@ -50,15 +53,15 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(133, 39);
+            this.txtUsuario.Location = new System.Drawing.Point(110, 56);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(188, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(176, 27);
             this.txtUsuario.TabIndex = 1;
             // 
             // btnEntrar
             // 
             this.btnEntrar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(122, 153);
+            this.btnEntrar.Location = new System.Drawing.Point(110, 159);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 23);
             this.btnEntrar.TabIndex = 2;
@@ -70,7 +73,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(56, 102);
+            this.label2.Location = new System.Drawing.Point(31, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 19);
             this.label2.TabIndex = 3;
@@ -79,7 +82,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(133, 94);
+            this.txtPassword.Location = new System.Drawing.Point(110, 105);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 27);
             this.txtPassword.TabIndex = 4;
@@ -88,7 +91,7 @@
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(223, 153);
+            this.btnSair.Location = new System.Drawing.Point(211, 159);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 5;
@@ -99,7 +102,7 @@
             // btnCadastrar
             // 
             this.btnCadastrar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(122, 198);
+            this.btnCadastrar.Location = new System.Drawing.Point(110, 204);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(176, 31);
             this.btnCadastrar.TabIndex = 6;
@@ -107,11 +110,22 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 262);
+            this.ClientSize = new System.Drawing.Size(355, 251);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.txtPassword);
@@ -124,6 +138,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login C#";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,6 +153,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

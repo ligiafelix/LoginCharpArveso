@@ -27,9 +27,11 @@ namespace LoginCharpArveso
             {
                 MessageBox.Show("Preencha os campos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUsuario.Select();
+             
             }
+            
         }
-
+       
         //Botao Entrar
 
         private void btnEntrar_Click_1(object sender, EventArgs e)
@@ -39,7 +41,7 @@ namespace LoginCharpArveso
             string query = "SELECT * FROM Usuario WHERE Username='" + txtUsuario.Text + "' AND Password = '" + txtPassword.Text + "'";
             SqlDataAdapter dp = new SqlDataAdapter(query, Conexao);
             DataTable dt = new DataTable();
-            dp.Fill(dt);
+            dp.Fill(dt); //executa query
 
             try
             {
@@ -76,9 +78,13 @@ namespace LoginCharpArveso
                 SqlDataAdapter dp = new SqlDataAdapter(query, Conexao);
                 DataTable dt = new DataTable(); //chama a tabela e add linha
                 dp.Fill(dt); //executa query
+                MessageBox.Show("Usuario inserido com sucesso");
+                txtUsuario.Text = ""; //Limpa as textbox dps de serem verificadas
+                txtPassword.Text = "";
             }
             catch (Exception erro)
             {
+                
                 MessageBox.Show("Falha ao inserir" + erro);
             }
             Conexao.Close();
