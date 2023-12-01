@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            this.btnTerminar = new System.Windows.Forms.Button();
+            this.btnImportar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnTerminar
+            // btnImportar
             // 
-            this.btnTerminar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTerminar.Location = new System.Drawing.Point(78, 71);
-            this.btnTerminar.Name = "btnTerminar";
-            this.btnTerminar.Size = new System.Drawing.Size(193, 113);
-            this.btnTerminar.TabIndex = 1;
-            this.btnTerminar.Text = "Terminar a Sessão";
-            this.btnTerminar.UseVisualStyleBackColor = true;
-            this.btnTerminar.Click += new System.EventHandler(this.btnTerminar_Click);
+            this.btnImportar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImportar.Location = new System.Drawing.Point(89, 176);
+            this.btnImportar.Name = "btnImportar";
+            this.btnImportar.Size = new System.Drawing.Size(182, 35);
+            this.btnImportar.TabIndex = 1;
+            this.btnImportar.Text = "Importar Arquivo";
+            this.btnImportar.UseVisualStyleBackColor = true;
+            this.btnImportar.Click += new System.EventHandler(this.btnImportar_Click);
             // 
             // pictureBox1
             // 
@@ -74,7 +74,7 @@
             this.ClientSize = new System.Drawing.Size(355, 251);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnTerminar);
+            this.Controls.Add(this.btnImportar);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
@@ -86,7 +86,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnTerminar;
+        private System.Windows.Forms.Button btnImportar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
     }

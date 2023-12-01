@@ -17,7 +17,7 @@ namespace LoginCharpArveso
             InitializeComponent();
         }
 
-        private void btnTerminar_Click(object sender, EventArgs e)
+        private void btnImportar_Click(object sender, EventArgs e) 
         {
             FrmLogin login = new FrmLogin();
             this.Hide();
