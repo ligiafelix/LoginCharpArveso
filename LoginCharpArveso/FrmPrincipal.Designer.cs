@@ -29,23 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            this.btnImportar = new System.Windows.Forms.Button();
+            this.btnCarregar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnTerminar = new System.Windows.Forms.Button();
+            this.txtArquivoSelecionado = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnImportar
+            // btnCarregar
             // 
-            this.btnImportar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImportar.Location = new System.Drawing.Point(89, 176);
-            this.btnImportar.Name = "btnImportar";
-            this.btnImportar.Size = new System.Drawing.Size(182, 35);
-            this.btnImportar.TabIndex = 1;
-            this.btnImportar.Text = "Importar Arquivo";
-            this.btnImportar.UseVisualStyleBackColor = true;
-            this.btnImportar.Click += new System.EventHandler(this.btnImportar_Click);
+            this.btnCarregar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarregar.Location = new System.Drawing.Point(102, 152);
+            this.btnCarregar.Name = "btnCarregar";
+            this.btnCarregar.Size = new System.Drawing.Size(141, 35);
+            this.btnCarregar.TabIndex = 1;
+            this.btnCarregar.Text = "Carregar Arquivo";
+            this.btnCarregar.UseVisualStyleBackColor = true;
+            this.btnCarregar.Click += new System.EventHandler(this.btnCarregar_Click);
             // 
             // pictureBox1
             // 
@@ -67,27 +69,57 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // btnTerminar
+            // 
+            this.btnTerminar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTerminar.Location = new System.Drawing.Point(102, 193);
+            this.btnTerminar.Name = "btnTerminar";
+            this.btnTerminar.Size = new System.Drawing.Size(141, 35);
+            this.btnTerminar.TabIndex = 2;
+            this.btnTerminar.Text = "Finalizar Sessão";
+            this.btnTerminar.UseVisualStyleBackColor = true;
+            this.btnTerminar.Click += new System.EventHandler(this.btnTerminar_Click);
+            // 
+            // txtArquivoSelecionado
+            // 
+            this.txtArquivoSelecionado.BackColor = System.Drawing.SystemColors.Window;
+            this.txtArquivoSelecionado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtArquivoSelecionado.Enabled = false;
+            this.txtArquivoSelecionado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArquivoSelecionado.Location = new System.Drawing.Point(83, 105);
+            this.txtArquivoSelecionado.Name = "txtArquivoSelecionado";
+            this.txtArquivoSelecionado.Size = new System.Drawing.Size(184, 30);
+            this.txtArquivoSelecionado.TabIndex = 1;
+            this.txtArquivoSelecionado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 251);
+            this.Controls.Add(this.txtArquivoSelecionado);
+            this.Controls.Add(this.btnTerminar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnImportar);
+            this.Controls.Add(this.btnCarregar);
             this.Name = "FrmPrincipal";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
+            this.TransparencyKey = System.Drawing.Color.White;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnImportar;
+        private System.Windows.Forms.Button btnCarregar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnTerminar;
+        private System.Windows.Forms.TextBox txtArquivoSelecionado;
     }
 }

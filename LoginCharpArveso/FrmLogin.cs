@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using SAPbobsCOM;
-using static System.Net.Mime.MediaTypeNames;
+
 
 namespace LoginCharpArveso {
     public partial class FrmLogin : Form {
@@ -40,7 +40,10 @@ namespace LoginCharpArveso {
                 string query = "select * from OHEM where firstName = '" + txtUsuario.Text + "'and pager = '" + txtPassword.Text + "'";
                 Qry = Program.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
                 Qry.DoQuery(query);
-                MessageBox.Show("foi");
+               
+                FrmPrincipal frmPrincipal = new FrmPrincipal();
+                this.Hide();
+                frmPrincipal.Show();
             }
             catch (Exception erro) {
                 MessageBox.Show("Usuario ou password incorretos" + erro);
@@ -51,7 +54,6 @@ namespace LoginCharpArveso {
    
         }
 
-
         //Botão Sair
         private void btnSair_Click_1(object sender, EventArgs e) {
             System.Windows.Forms.Application.Exit();
@@ -60,8 +62,8 @@ namespace LoginCharpArveso {
         private void btnCadastrar_Click(object sender, EventArgs e) {
             var a = Program.oCompany.UserName;
             SAPbobsCOM.EmployeesInfo oEmployee = (SAPbobsCOM.EmployeesInfo)Program.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oEmployeesInfo);
+            
             string[] nomeseparado = new string[2]; //declarando array de 2 strings
-           
             nomeseparado = txtUsuario.Text.Split('.'); // separando por.
 
             oEmployee.FirstName = nomeseparado[0];

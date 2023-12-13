@@ -20,11 +20,11 @@ namespace LoginCharpArveso
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
              if (ConectarSAP()) {
-                MessageBox.Show("Conectou!");
+                MessageBox.Show("Conectado ao SAP");
 
             }
             else {
-                MessageBox.Show("Não conectou!");
+                MessageBox.Show("Não conectou ao SAP");
             }
             Application.Run(new FrmLogin());
 
